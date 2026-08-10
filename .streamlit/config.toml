@@ -1,0 +1,17 @@
+[server]
+# transformers/sentence-transformers ship hundreds of optional submodules.
+# Streamlit's default watcher tries to introspect them all and spams the
+# console with harmless "No module named 'torchvision'" tracebacks.
+# Turning the watcher off stops the noise (you just lose hot-reload on save).
+fileWatcherType = "none"
+
+[logger]
+level = "warning"
+
+[theme]
+base = "light"
+primaryColor = "#5b5bd6"
+backgroundColor = "#f6f7fb"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#1f2233"
+font = "sans serif"
