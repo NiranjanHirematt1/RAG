@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+# Local vector stores (use Qdrant Cloud in production)
+qdrant_local/
+qdrant_storage/
+
+# Streamlit secrets (API keys) - never commit
+.streamlit/secrets.toml
+
+# uv.lock is kept local only: Streamlit Cloud would pick it over
+# requirements.txt. Run `uv lock` locally to create it.
+uv.lock
